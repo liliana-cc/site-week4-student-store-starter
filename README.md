@@ -47,17 +47,17 @@ Deployed Application (optional): [Student Store Deployed Site](ADD_LINK_HERE)
   - [ ] **VIDEO WALKTHROUGH SPECIAL INSTRUCTIONS**: Use Prisma Studio to demonstrate the creation of all attributes (table columns) in your Order Items Model.
 - [ ] **API Endpoints**
   - [ ] Application supports the following **Product Endpoints**:
-    - [ ] `GET /products`: Fetch a list of all products.
-    - [ ] `GET /products/:id`: Fetch details of a specific product by its ID.
-    - [ ] `POST /products`: Add a new product to the database.
-    - [ ] `PUT /products/:id`: Update the details of an existing product.
-    - [ ] `DELETE /products/:id`: Remove a product from the database.
-  - [ ] Application supports the following **Order Endpoints**:
-    - [ ] `GET /orders`: Fetch a list of all orders.
-    - [ ] `GET /orders/:order_id`: Fetch details of a specific order by its ID, including the order items.
-    - [ ] `POST /orders`: Create a new order with specified order items.
-    - [ ] `PUT /orders/:order_id`: Update the details of an existing order (e.g., change status).
-    - [ ] `DELETE /orders/:order_id`: Remove an order from the database.
+    - [x] `GET /products`: Fetch a list of all products.
+    - [x] `GET /products/:id`: Fetch details of a specific product by its ID.
+    - [x] `POST /products`: Add a new product to the database.
+    - [x] `PUT /products/:id`: Update the details of an existing product.
+    - [x] `DELETE /products/:id`: Remove a product from the database.
+  - [x] Application supports the following **Order Endpoints**:
+    - [x] `GET /orders`: Fetch a list of all orders.
+    - [x] `GET /orders/:order_id`: Fetch details of a specific order by its ID, including the order items.
+    - [x] `POST /orders`: Create a new order with specified order items.
+    - [x] `PUT /orders/:order_id`: Update the details of an existing order (e.g., change status).
+    - [x] `DELETE /orders/:order_id`: Remove an order from the database.
     - [ ] **VIDEO WALKTHROUGH SPECIAL INSTRUCTIONS**: Use Postman or another API testing tool to demonstrate the successful implementation of each endpoint. For the `DELETE` endpoints, please use Prisma Studio to demonstrate that any relevant order items have been deleted. 
 - [ ] **Frontend Integration**
   - [ ] Connect the backend API to the provided frontend interface, ensuring dynamic interaction for product browsing, cart management, and order placement. Adjust the frontend as necessary to work with your API.
