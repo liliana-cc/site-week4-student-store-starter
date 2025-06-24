@@ -32,21 +32,21 @@ Deployed Application (optional): [Student Store Deployed Site](ADD_LINK_HERE)
     - [x] `status`
     - [x] `created_at`
   - [x] Implement methods for CRUD operations on orders.
-  - [ ] Ensure transaction handling such that when an order is deleted, any `order_items` that reference that order are also deleted. 
+  - [x] Ensure transaction handling such that when an order is deleted, any `order_items` that reference that order are also deleted. 
   - [ ] **VIDEO WALKTHROUGH SPECIAL INSTRUCTIONS**: Use Prisma Studio to demonstrate the creation of all attributes (table columns) in your Order Model.
 
-- [ ] **Order Items Model**
-  - [ ] Develop a model to represent the items within an order. 
-  - [ ] This model should at minimum include the attributes:
-    - [ ] `order_item_id`
-    - [ ] `order_id`
-    - [ ] `product_id`
-    - [ ] `quantity`
-    - [ ] `price`
-  - [ ] Implement methods for fetching and creating order items.  
+- [x] **Order Items Model**
+  - [x] Develop a model to represent the items within an order. 
+  - [x] This model should at minimum include the attributes:
+    - [x] `order_item_id`
+    - [x] `order_id`
+    - [x] `product_id`
+    - [x] `quantity`
+    - [x] `price`
+  - [x] Implement methods for fetching and creating order items.  
   - [ ] **VIDEO WALKTHROUGH SPECIAL INSTRUCTIONS**: Use Prisma Studio to demonstrate the creation of all attributes (table columns) in your Order Items Model.
-- [ ] **API Endpoints**
-  - [ ] Application supports the following **Product Endpoints**:
+- [x] **API Endpoints**
+  - [x] Application supports the following **Product Endpoints**:
     - [x] `GET /products`: Fetch a list of all products.
     - [x] `GET /products/:id`: Fetch details of a specific product by its ID.
     - [x] `POST /products`: Add a new product to the database.
