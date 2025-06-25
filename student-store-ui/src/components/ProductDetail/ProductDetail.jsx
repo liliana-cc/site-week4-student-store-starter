@@ -12,6 +12,19 @@ function ProductDetail({ addToCart, removeFromCart, getQuantityOfItemInCart }) {
   const [isFetching, setIsFetching] = useState(false);
   const [error, setError] = useState(null);
 
+  useEffect(() => {  // recall useEffect runs on every render
+    const fetchProductDetail = async () => {
+      try {
+        const response = await axios.get(`http://localhost:3000/products/${productId}`);
+        setProduct(response.data);  // set single product state for thing page
+      } catch(error) {
+        console.error('Error fetching product details:', error);
+      } 
+    } 
+    if (productId) {
+      fetchProductDetail();
+    }
+  }, [productId]);  // runs when productId changes
 
   if (error) {
     return <NotFound />;

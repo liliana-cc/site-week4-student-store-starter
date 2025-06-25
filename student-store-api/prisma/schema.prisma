@@ -26,8 +26,8 @@ model Product {
 
 model Order {
   id            Int         @id @default(autoincrement())
-  customer      String
-  total         Int
+  customer      Int
+  total         Decimal     @db.Decimal(10,2)
   status        String
   createdAt     DateTime    @default(now())
   orderItem    OrderItem[]

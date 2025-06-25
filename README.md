@@ -9,7 +9,7 @@ Deployed Application (optional): [Student Store Deployed Site](ADD_LINK_HERE)
 #### CORE FEATURES
 
 - [x] **Database Creation**: Set up a Postgres database to store information about products and orders.
-  - [ ]  Use Prisma to define models for `products`, `orders`, and `order_items`.
+  - [x]  Use Prisma to define models for `products`, `orders`, and `order_items`.
   - [ ]  **VIDEO WALKTHROUGH SPECIAL INSTRUCTIONS**: Use Prisma Studio to demonstrate the creation of your `products`, `orders`, and `order_items` tables. 
 - [x] **Products Model**
   - [x] Develop a products model to represent individual items available in the store. 
@@ -60,17 +60,17 @@ Deployed Application (optional): [Student Store Deployed Site](ADD_LINK_HERE)
     - [x] `DELETE /orders/:order_id`: Remove an order from the database.
     - [ ] **VIDEO WALKTHROUGH SPECIAL INSTRUCTIONS**: Use Postman or another API testing tool to demonstrate the successful implementation of each endpoint. For the `DELETE` endpoints, please use Prisma Studio to demonstrate that any relevant order items have been deleted. 
 - [ ] **Frontend Integration**
-  - [ ] Connect the backend API to the provided frontend interface, ensuring dynamic interaction for product browsing, cart management, and order placement. Adjust the frontend as necessary to work with your API.
-  - [ ] Ensure the home page displays products contained in the product table.
+  - [x] Connect the backend API to the provided frontend interface, ensuring dynamic interaction for product browsing, cart management, and order placement. Adjust the frontend as necessary to work with your API.
+  - [x] Ensure the home page displays products contained in the product table.
   - [ ] **VIDEO WALKTHROUGH SPECIAL INSTRUCTIONS**: Use `npm start` to run your server and display your website in your browser. 
-    - [ ] Demonstrate that users can successfully add items to their shopping cart, delete items from their shopping cart, and place an order
-    - [ ] After placing an order use Postman or Prisma Studio demonstrate that a corresponding order has been created in your orders table.
+    - [x] Demonstrate that users can successfully add items to their shopping cart, delete items from their shopping cart, and place an order
+    - [x] After placing an order use Postman or Prisma Studio demonstrate that a corresponding order has been created in your orders table.
 
 ### Stretch Features
 
-- [ ] **Added Endpoints**
-  - [ ] `GET /order-items`: Create an endpoint for fetching all order items in the database.
-  - [ ] `POST /orders/:order_id/items` Create an endpoint that adds a new order item to an existing order. 
+- [x] **Added Endpoints**
+  - [x] `GET /order-items`: Create an endpoint for fetching all order items in the database.
+  - [x] `POST /orders/:order_id/items` Create an endpoint that adds a new order item to an existing order. 
 - [ ] **Past Orders Page**
   - [ ] Build a page in the UI that displays the list of all past orders.
   - [ ] The page lists all past orders for the user, including relevant information such as:
