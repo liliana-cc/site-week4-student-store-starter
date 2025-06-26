@@ -5,6 +5,12 @@
   display: flex;
   flex-direction: column;
   border: solid 1px var(--border-color);
+  border-radius: 10px;
+}
+.ProductCard:hover {
+  transform: translateY(-5px) scale(1.03);
+  box-shadow: 0 0 10px rgb(236, 159, 245);
+  cursor: pointer;
 }
 .ProductCard .media {
   height: 250px;
@@ -13,6 +19,7 @@
 .ProductCard .media img {
   height: 250px;
   width: 248px;
+  border-radius: 10px 10px 0 0;
 }
 .ProductCard .product-info {
   flex: 1;
@@ -66,8 +73,8 @@
 .ProductCard .actions .buttons i {
   width: 20px;
   height: 20px;
-  border: solid 1px var(--bright-green);
-  color: var(--bright-green);
+  border: solid 1px rgb(115, 7, 192);
+  color: rgb(115, 7, 192);
   cursor: pointer;
   display: flex;
   align-items: center;

@@ -60,7 +60,7 @@ function App() {
         throw new Error("Please enter your name before checkout");
       }
       
-      const cartItems = Object.entries(cart).map(([productId, quantity]) => {
+      const cartItems = Object.entries(cart).map(([productId, quantity]) => {  // want to map over card to get productId & quantity for calculation of total in the future using premade functions
         const product = products.find(p => p.id === Number(productId));
         return {
           price: product.price,
@@ -75,7 +75,7 @@ function App() {
       // creating order (letting backend calculate total)  // sending data TO the backend
       const orderResponse = await axios.post('http://localhost:3000/orders', {  // creating a new order (backend expects customer, total, & status). // object sent in axios.post becomes req.body in backend order controller
         total: finalTotal, // backend will calculate this
-        customer: Number(userInfo.name) || 1, // use 1 as default if conversion fails
+        customer: Number(userInfo.name) || 1, // ensuring student id is a number, but using 1 as default if conversion fails
         status: "completed"
       });
       console.log('order created response:', orderResponse.data);
@@ -93,12 +93,12 @@ function App() {
         await axios.post(`http://localhost:3000/orders/${order.id}/items`, {  // sending data TO the backend
           productId: Number(productId),  // js/http converts everything to strings -> must encapsulate in Number()
           quantity: Number(quantity),
-          price: Number(product.price)
+          price: Number(product.price)  // using product (which is the product w/ the specific id, we can extract the price (something we dont already have from the cart map))
         });
       }
 
-      setCart({});  // clear cart
-      setOrder(order);  // save order. // updating frontend state w/ the response
+      setCart({});  // clear cart -> empty dictionary
+      setOrder(order);  // save order  // updating frontend state w/ the response
       console.log('Checkout completed!');
     
     } catch (error) {

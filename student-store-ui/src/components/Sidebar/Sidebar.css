@@ -12,14 +12,16 @@
   padding: 0;
   overflow-y: scroll;
   padding-bottom: 2rem;
-  background: var(--dark-blue);
-  border-right: solid 1px white;
+  background: rgb(22, 2, 69);
+  border-right: solid 1px rgba(76, 72, 72, 0.307);
+  box-shadow: 0 4px 10px #f8bcf6;
 }
 .Sidebar.closed {
   width: 60px;
 }
 .Sidebar.open {
   width: 575px;
+  border-radius: 0 10px 10px 0;
 }
 .Sidebar .wrapper {
   display: flex;
@@ -35,6 +37,12 @@
   color: white;
   cursor: pointer;
 } */
+
+.Sidebar .toggle-button.button.closed:hover {
+  transform: translateX(5px) scale(1.03);
+  cursor: pointer;
+}
+
 .Sidebar .toggle-button.open {
   transform: rotateY(180deg);
 }

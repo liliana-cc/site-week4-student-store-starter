@@ -40,8 +40,9 @@
 .SubNavbar .content .search-bar i {
   height: 40px;
   width: 40px;
-  background: var(--bright-green);
-  color: white;
+  border-radius: 0 10px 10px 0;
+  background: rgb(148, 148, 148);
+  color: rgb(0, 0, 0);
   fill: white;
   display: flex;
   justify-content: center;
@@ -113,8 +114,9 @@
 .SubNavbar .category-menu.closed li button {
   transform: scale(0.01);
 }
+
 .SubNavbar .category-menu li.is-active button {
-  border-bottom: solid 2px var(--bright-green);
+  border-bottom: solid 2px rgb(168, 5, 197);
 }
 .SubNavbar .category-menu li button {
   cursor: pointer;
@@ -127,6 +129,11 @@
   padding-bottom: 10px;
   border-bottom: solid 2px transparent;
   transition: all 0.2s ease;
+  color: white;
+}
+.SubNavbar .category-menu li button:hover {
+  transform: translateY(-5px) scale(1.03);
+  cursor: pointer;
 }
 .SubNavbar .category-menu li button:active {
   transform: translateY(1px);
