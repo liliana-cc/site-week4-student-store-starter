@@ -50,28 +50,12 @@ Deployed Application (optional): [Student Store Deployed Site](ADD_LINK_HERE)
     - [x] `GET /products/:id`: Fetch details of a specific product by its ID.
     - [x] `POST /products`: Add a new product to the database.
     - [x] `PUT /products/:id`: Update the details of an existing product.
-    {
-    "name": "beach ball",
-    "description": "beach ball",
-    "price": "19",
-    "category": "Apparel",
-    "image_url": "an-image-url"
-    }
     - [x] `DELETE /products/:id`: Remove a product from the database.
   - [x] Application supports the following **Order Endpoints**:
     - [x] `GET /orders`: Fetch a list of all orders.
     - [x] `GET /orders/:order_id`: Fetch details of a specific order by its ID, including the order items.
     - [x] `POST /orders`: Create a new order with specified order items.
-     {
-    "customer": 212,
-    "total": 999,
-    "status": "pending",
-    "orderItem": {}
-    }
     - [x] `PUT /orders/:order_id`: Update the details of an existing order (e.g., change status).
-
-    // change pending to completed
-
     - [x] `DELETE /orders/:order_id`: Remove an order from the database.
     - [x] **VIDEO WALKTHROUGH SPECIAL INSTRUCTIONS**: Use Postman or another API testing tool to demonstrate the successful implementation of each endpoint. For the `DELETE` endpoints, please use Prisma Studio to demonstrate that any relevant order items have been deleted. 
 - [x] **Frontend Integration**
@@ -86,11 +70,6 @@ Deployed Application (optional): [Student Store Deployed Site](ADD_LINK_HERE)
 - [x] **Added Endpoints**
   - [x] `GET /order-items`: Create an endpoint for fetching all order items in the database.
   - [x] `POST /orders/:order_id/items` Create an endpoint that adds a new order item to an existing order. 
-  {
-    "quantity": 2,
-    "price": "2",
-    "productId": 12
-  }
 - [ ] **Past Orders Page**
   - [ ] Build a page in the UI that displays the list of all past orders.
   - [ ] The page lists all past orders for the user, including relevant information such as:
@@ -118,31 +97,40 @@ Deployed Application (optional): [Student Store Deployed Site](ADD_LINK_HERE)
 
 ### Walkthrough Video
 
-`TODO://` Add the embedded URL code to your animated app walkthrough below, `ADD_EMBEDDED_CODE_HERE`. Make sure the video or gif actually renders and animates when viewing this README. (🚫 Remove this paragraph after adding walkthrough video)
+Please watch all videos for the sake of simplicity for grading. Thank you!
 
-`ADD_EMBEDDED_CODE_HERE`
+[Student Store Walkthrough Part 1](https://www.loom.com/share/c798b7afed7e4a2ca8a291809aeb01c7?sid=529e7c62-46b2-4eaf-80e9-ca51cbd7de08)
+[Student Store Walkthrough Part 2](https://www.loom.com/share/a465212a30814098afabe5b2545bc108?sid=da7eca6c-1e92-4470-bcd1-c7ac1133d35a)
+[Student Store Walkthrough Cascade Delete](https://www.loom.com/share/26b4f6489d5444138296d65249b7e447?sid=8138553a-5000-4eff-aa59-12cc71d2fac4)
+
+
 
 ### Reflection
 
 * Did the topics discussed in your labs prepare you to complete the assignment? Be specific, which features in your weekly assignment did you feel unprepared to complete?
 
-Add your response here
+Yes, the topics discussed this week, specifically on the connectivity between models, controllers, and routes, were very helpful! As for feeling unprepared at any point of this project, I would say I was not prepared for how much of a scavenger hunt it could be. Looking over front-end ui code that I did not make was challenging, especially when trying to figure out which variables connected to the backend I created, but it was refreshing and useful since I am aware this is a skill we will need to hone in on as we continue our careers in the industry.
 
 * If you had more time, what would you have done differently? Would you have added additional features? Changed the way your project responded to a particular event, etc.
   
-Add your response here
+If I had more time, I would have loved to implement a login page that stores login information locally for users to see their saved orders. I would have also liked to work on a more personalized front end and the capability of users to see their past orders and potentially reorder.
 
 * Reflect on your project demo, what went well? Were there things that maybe didn't go as planned? Did you notice something that your peer did that you would like to try next time?
 
-Add your response here
+My project demo this week was better than last weeks for sure! I gave myself time to practice and really settle in with what I wanted to present. While presenting is still nerveracking, I appreciate all of the constructive advice I get as I know it will make me a better presenter in the future. I would love to not use as many filler words and be intentional with every word I use as time is precious when presenting. I think an advisor also mentioned my excessive comments on the code I presented, which I believe was helpful as it would make the code easier to understand and digest if there weren't so much visual noise. I believe it was also mentioned that I should reduce the comments in my actual code, however, since this is a project meant to help me build my skills, I think my comments will help bring me clarity in the future if I ever want to look back at my projects for reference on future endeavors. That being said, I understand that in a team / professional environment, making comments for code easy to read and not distracting is imperative, but for my personal usage, I will add as many helpful and clarifying comments for myself.
 
 ### Open-source libraries used
 
-- Add any links to open-source libraries used in your project.
+- https://www.prisma.io/docs/orm/reference/prisma-client-reference
+- https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/CORS
+- https://expressjs.com/en/guide/writing-middleware.html
+- https://www.prisma.io/docs/orm/prisma-client/queries/relation-queries
 
 ### Shout out
 
 Give a shout out to somebody from your cohort that especially helped you during your project. This can be a fellow peer, instructor, TA, mentor, etc.
+
+Thank you for Jasmine for helping bring me clarity on the handleOnCheckout function and also Ayomide for working and struggling through the creation of that function together. I also want to thank Paola and Sarvesh for helping me set up node mon and bringing clarity on the endpoints aspect. Finally, a special thank you to Devarsh for being a compassionate and approachable instructor. Our SalesforcexCodepath family is becoming more tight-nit, and I am beyond grateful for the opportunity to work alongside so many amazing and hardworking individuals!
 
 
 
